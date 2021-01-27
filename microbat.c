@@ -15,7 +15,7 @@ int main() {
 
 	for(i = 0; i < 6; i++) {
 		fscanf (fp[i], "%d", &bat[i]);  
-		fclose(fp[i]);
+		fclose (fp[i]);
 	}
 
 	drain = bat[2] + bat[3];
@@ -25,7 +25,7 @@ int main() {
 		remain = (bat[4] + bat[5]) * 60 / drain;
 		h = remain / 60;
 		m = remain % 60;
-		printf("🔋 %d%%  %d%%\t(%dh %dmin)\n", bat[0], bat[1], h, m);
+		printf ("🔋 %d%%  %d%%\t(%dh %dmin)\n", bat[0], bat[1], h, m);
 	}
 	return 0;
 }
